@@ -17,7 +17,7 @@ class ProjectDB(MySQLMixin, BaseProjectDB, BaseDB):
     __tablename__ = 'projectdb'
 
     def __init__(self, host='localhost', port=3306, database='projectdb',
-                 user='root', passwd=None):
+                 user='root', passwd='ronald'):
         self.database_name = database
         self.conn = mysql.connector.connect(user=user, password=passwd,
                                             host=host, port=port, autocommit=True)

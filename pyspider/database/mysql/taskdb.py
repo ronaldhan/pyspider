@@ -22,7 +22,7 @@ class TaskDB(MySQLMixin, SplitTableMixin, BaseTaskDB, BaseDB):
     __tablename__ = ''
 
     def __init__(self, host='localhost', port=3306, database='taskdb',
-                 user='root', passwd=None):
+                 user='root', passwd='ronald'):
         self.database_name = database
         self.conn = mysql.connector.connect(user=user, password=passwd,
                                             host=host, port=port, autocommit=True)
