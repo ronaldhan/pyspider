@@ -1,0 +1,11 @@
+{
+  "webui": {
+    "host": "localhost"
+  },
+  "fetcher": {
+    "xmlrpc": false
+  },
+  "taskdb": "mysql+taskdb://root:ronald@localhost:3306/pyspider_taskdb",
+  "projectdb": "mysql+projectdb://root:ronald@localhost:3306/pyspider_projectdb",
+  "resultdb": "mysql+resultdb://root:ronald@localhost:3306/pyspider_resultdb"
+}
